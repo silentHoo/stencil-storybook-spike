@@ -13,9 +13,11 @@
     "lint": "eslint --ext .js,.vue src test/unit test/e2e/specs",
     "build": "node build/build.js",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "postinstall": "cd node_modules/stencil-components-spike && yarn install && yarn build"
   },
   "dependencies": {
+    "stencil-components-spike": "https://github.com/silentHoo/stencil-components-spike.git",
     "storybook-readme": "^3.3.0",
     "vue": "^2.5.2"
   },
