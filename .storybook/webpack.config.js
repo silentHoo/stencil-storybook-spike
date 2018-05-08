@@ -6,7 +6,7 @@ module.exports = (baseConfig, env, defaultConfig) => {
   // We extend the default config by
   const copyWebpackPlugin = new CopyWebpackPlugin([
     {
-      from: path.resolve(__dirname, '../node_modules/stencil-components-spike/dist'),
+      from: path.resolve(__dirname, '../node_modules/stencil-components-spike/dist/stencil-components-spike'),
       to: path.posix.join('static', 'stencil-components-spike'),
       ignore: ['.*']
     },
