@@ -14,10 +14,10 @@
     "build": "node build/build.js",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "postinstall": "cd node_modules/stencil-components-spike && yarn install && yarn build"
+    "postinstall": "cd node_modules/stencil-components-spike && npm install && npm build && npm build:doc"
   },
   "dependencies": {
-    "stencil-components-spike": "https://github.com/silentHoo/stencil-components-spike.git",
+    "stencil-components-spike": "https://github.com/silentHoo/stencil-components-spike.git#master",
     "storybook-readme": "^3.3.0",
     "vue": "^2.5.2"
   },

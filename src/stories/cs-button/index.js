@@ -16,6 +16,7 @@ import ComponentTemplateRenderer from '../helpers/ComponentTemplateRenderer.js'
 // Component Imports
 //
 import { CsButton } from 'stencil-components-spike/dist/collection/components/cs-button/cs-button.js'
+import apiDocs from 'stencil-components-spike/src/components/cs-button/cs-button.tsx.md'
 
 //
 // Knobs
@@ -25,7 +26,7 @@ const knobButtonName = (name) => (
   text('Button name', name)
 )
 
-const template = new ComponentTemplateRenderer({ 'csButton': CsButton }).getTemplate()
+const template = new ComponentTemplateRenderer({ 'csButton': CsButton }, apiDocs).getTemplate()
 
 export default {
   addStory: () => storiesOf('<cs-button>', module)
